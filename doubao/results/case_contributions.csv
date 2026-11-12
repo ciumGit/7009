@@ -1,0 +1,11 @@
+feature,patient_value,shap_value,direction,note
+Age,80y,0.3039,increases stroke probability,
+Heart disease,yes,0.0439,increases stroke probability,
+Residence,Rural,0.0266,increases stroke probability,
+Married,Yes,0.0151,increases stroke probability,
+Blood sugar,67,0.0105,increases stroke probability,
+Job,Self-employed,-0.0081,decreases stroke probability,
+Smoking,formerly smoked,0.0036,increases stroke probability,
+BMI,21.7,-0.0015,decreases stroke probability,
+High blood pressure,no,-0.001,decreases stroke probability,
+Gender,Female,0.0006,increases stroke probability,

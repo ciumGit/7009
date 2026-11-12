@@ -1,0 +1,48 @@
+{
+  "explained_row": 268,
+  "selection_rule": "true positive with median predicted probability in the explained held-out sample",
+  "y_true": 1,
+  "p_stroke": 0.6936,
+  "threshold": 0.5582,
+  "case_type": "true positive",
+  "base_value": 0.29998,
+  "sum_grouped_shap": 0.39355,
+  "reconstruction": 0.69353,
+  "reconstruction_residual": 4.6e-05,
+  "grouped": {
+    "Age": 0.3039,
+    "Heart disease": 0.0439,
+    "Residence": 0.0266,
+    "Married": 0.0151,
+    "Blood sugar": 0.0105,
+    "Job": -0.0081,
+    "Smoking": 0.0036,
+    "BMI": -0.0015,
+    "High blood pressure": -0.001,
+    "Gender": 0.0006
+  },
+  "grouped_raw": {
+    "age": 0.3039,
+    "heart_disease": 0.0439,
+    "Residence_type": 0.0266,
+    "ever_married": 0.0151,
+    "avg_glucose_level": 0.0105,
+    "work_type": -0.0081,
+    "smoking_status": 0.0036,
+    "bmi": -0.0015,
+    "hypertension": -0.001,
+    "gender": 0.0006
+  },
+  "raw_record": {
+    "gender": "Female",
+    "age": 80.0,
+    "hypertension": "0",
+    "heart_disease": "1",
+    "ever_married": "Yes",
+    "work_type": "Self-employed",
+    "Residence_type": "Rural",
+    "avg_glucose_level": 66.72,
+    "bmi": 21.7,
+    "smoking_status": "formerly smoked"
+  }
+}

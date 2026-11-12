@@ -1,0 +1,110 @@
+{
+  "n_explained": 300,
+  "positive_in_sample": 14,
+  "base_value": 0.2999773074114631,
+  "grouped_importance": [
+    {
+      "group": "age",
+      "mean_abs_shap": 0.17096303363526058,
+      "pretty": "Age",
+      "share_pct": 60.0
+    },
+    {
+      "group": "bmi",
+      "mean_abs_shap": 0.022824846457398653,
+      "pretty": "BMI",
+      "share_pct": 8.0
+    },
+    {
+      "group": "ever_married",
+      "mean_abs_shap": 0.022547398782406816,
+      "pretty": "Marital status",
+      "share_pct": 7.9
+    },
+    {
+      "group": "avg_glucose_level",
+      "mean_abs_shap": 0.022541696908426393,
+      "pretty": "Blood sugar",
+      "share_pct": 7.9
+    },
+    {
+      "group": "work_type",
+      "mean_abs_shap": 0.015370198223836529,
+      "pretty": "Job type",
+      "share_pct": 5.4
+    },
+    {
+      "group": "smoking_status",
+      "mean_abs_shap": 0.010461376171929606,
+      "pretty": "Smoking",
+      "share_pct": 3.7
+    },
+    {
+      "group": "hypertension",
+      "mean_abs_shap": 0.007781435195641048,
+      "pretty": "High blood pressure",
+      "share_pct": 2.7
+    },
+    {
+      "group": "gender",
+      "mean_abs_shap": 0.00481246077713139,
+      "pretty": "Gender",
+      "share_pct": 1.7
+    },
+    {
+      "group": "Residence_type",
+      "mean_abs_shap": 0.004159285997476992,
+      "pretty": "Residence",
+      "share_pct": 1.5
+    },
+    {
+      "group": "heart_disease",
+      "mean_abs_shap": 0.0035377870834148156,
+      "pretty": "Heart disease",
+      "share_pct": 1.2
+    }
+  ],
+  "encoded_importance_top10": [
+    {
+      "feature": "Age",
+      "mean_abs_shap": 0.17096303363526058
+    },
+    {
+      "feature": "BMI",
+      "mean_abs_shap": 0.022824846457398653
+    },
+    {
+      "feature": "Blood sugar",
+      "mean_abs_shap": 0.022541696908426393
+    },
+    {
+      "feature": "ever married = Yes",
+      "mean_abs_shap": 0.011629464715004024
+    },
+    {
+      "feature": "ever married = No",
+      "mean_abs_shap": 0.01098104693379141
+    },
+    {
+      "feature": "High blood pressure",
+      "mean_abs_shap": 0.007781435195641048
+    },
+    {
+      "feature": "work type = Private",
+      "mean_abs_shap": 0.005940686458217385
+    },
+    {
+      "feature": "work type = children",
+      "mean_abs_shap": 0.005777327336886549
+    },
+    {
+      "feature": "smoking = never smoked",
+      "mean_abs_shap": 0.005375041259081899
+    },
+    {
+      "feature": "smoking = Unknown",
+      "mean_abs_shap": 0.0047386537018968234
+    }
+  ],
+  "share_top3": 75.9
+}

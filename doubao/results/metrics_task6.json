@@ -1,0 +1,67 @@
+{
+  "model": "RBF SVM (C=0.5, gamma=scale) with Platt scaling, 3-fold calibration",
+  "explainer": "shap.KernelExplainer on predict_proba, class 1",
+  "training_seconds": 1.1,
+  "threshold": 0.8076,
+  "test": {
+    "accuracy": 0.8796,
+    "balanced_accuracy": 0.6142,
+    "precision": 0.1524,
+    "recall": 0.32,
+    "f1": 0.2065,
+    "roc_auc": 0.8132,
+    "average_precision": 0.1723,
+    "brier": 0.1644,
+    "confusion": {
+      "tn": 883,
+      "fp": 89,
+      "fn": 34,
+      "tp": 16
+    }
+  },
+  "explainer_detail": {
+    "background": "shap.kmeans of 5110-row training fold, 20 clusters",
+    "nsamples_global": 300,
+    "nsamples_local": 800,
+    "l1_reg": "num_features(10)",
+    "explained_rows_global": 60,
+    "base_value": 0.2859,
+    "max_abs_residual": 0.0,
+    "mean_abs_residual": 0.0,
+    "kernel_seconds_global": 94.2,
+    "kernel_seconds_local": 3.7,
+    "case_row_in_test": 668,
+    "case_fx": 0.6385,
+    "case_base": 0.2859,
+    "case_contributions": {
+      "Age": 0.4111,
+      "Job type": -0.0898,
+      "Residence": 0.0551,
+      "Heart disease": -0.0382,
+      "Blood sugar": 0.02,
+      "Smoking": -0.0142
+    },
+    "top5_global": [
+      {
+        "pretty": "Age",
+        "mean_abs": 0.2151527117088059
+      },
+      {
+        "pretty": "Smoking",
+        "mean_abs": 0.032960075965894384
+      },
+      {
+        "pretty": "BMI",
+        "mean_abs": 0.0308368174919515
+      },
+      {
+        "pretty": "Job type",
+        "mean_abs": 0.022503440169007297
+      },
+      {
+        "pretty": "High blood pressure",
+        "mean_abs": 0.01956593642537516
+      }
+    ]
+  }
+}

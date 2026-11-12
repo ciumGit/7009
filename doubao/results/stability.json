@@ -1,0 +1,92 @@
+{
+  "background_A_seed": 2021,
+  "background_B_seed": 777,
+  "base_A": 0.3,
+  "base_B": 0.2875,
+  "top5_A": [
+    "Age",
+    "BMI",
+    "Marital status",
+    "Blood sugar",
+    "Job type"
+  ],
+  "top5_B": [
+    "Age",
+    "Marital status",
+    "BMI",
+    "Blood sugar",
+    "Job type"
+  ],
+  "top5_overlap": 5,
+  "case_contributions_A": {
+    "Age": 0.3039,
+    "Blood sugar": 0.0105,
+    "BMI": -0.0015,
+    "High blood pressure": -0.001,
+    "Heart disease": 0.0439,
+    "Gender": 0.0006,
+    "Marital status": 0.0151,
+    "Job type": -0.0081,
+    "Residence": 0.0266,
+    "Smoking": 0.0036
+  },
+  "case_contributions_B": {
+    "Age": 0.2949,
+    "Blood sugar": 0.0117,
+    "BMI": -0.0048,
+    "High blood pressure": -0.008,
+    "Heart disease": 0.0431,
+    "Gender": 0.0044,
+    "Marital status": 0.024,
+    "Job type": 0.0153,
+    "Residence": 0.0228,
+    "Smoking": 0.0027
+  },
+  "case_sign_flips": [
+    "Job type"
+  ],
+  "case_output_A": 0.6936,
+  "case_output_B": 0.6936,
+  "mean_abs_comparison": {
+    "Age": [
+      0.171,
+      0.1676
+    ],
+    "BMI": [
+      0.0228,
+      0.0219
+    ],
+    "Marital status": [
+      0.0225,
+      0.0225
+    ],
+    "Blood sugar": [
+      0.0225,
+      0.0201
+    ],
+    "Job type": [
+      0.0154,
+      0.0184
+    ],
+    "Smoking": [
+      0.0105,
+      0.0095
+    ],
+    "High blood pressure": [
+      0.0078,
+      0.0144
+    ],
+    "Gender": [
+      0.0048,
+      0.0045
+    ],
+    "Residence": [
+      0.0042,
+      0.0037
+    ],
+    "Heart disease": [
+      0.0035,
+      0.0076
+    ]
+  }
+}
