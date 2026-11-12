@@ -1,0 +1,61 @@
+FILE MANIFEST
+==============================================================================
+Built 2026-11-12. SHA-256 truncated to 16 characters.
+
+00_CHECKLIST_AND_INDEX.txt                                      5349  6bb44732ce3b85c2
+01_Report/Report_Stroke_SHAP.docx                            1221037  8d5c885c1ec3888a
+02_Code/README.md                                               2907  a18690639ce2a17e
+02_Code/data/healthcare-dataset-stroke-data.csv               316971  644d473b05d27970
+02_Code/logs/eda_baseline.log                                   1186  d692eb858284b8c3
+02_Code/outputs/X_test_encoded.csv                            173717  443d9eea5e2e38bd
+02_Code/outputs/X_test_raw.csv                                 70453  e8acede821db5694
+02_Code/outputs/data_sha256.txt                                  101  8007c6ce368e83cd
+02_Code/outputs/eda_stats.json                                  3490  5aba102aa8bb8610
+02_Code/outputs/figs/fig1_eda_panel.png                       412422  c8cc8868778afa53
+02_Code/outputs/figs/fig2_local_force_plot.png                120251  fc12b17d0452b693
+02_Code/outputs/figs/fig2b_local_waterfall.png                122096  881b3f9d73949303
+02_Code/outputs/figs/fig3a_summary_beeswarm.png               146907  75ab87edb491ee36
+02_Code/outputs/figs/fig3b_mean_abs_bar.png                    76508  bcfa4ebef760a93f
+02_Code/outputs/figs/fig3c_grouped_importance.png              46887  a4c61f10cfb1564c
+02_Code/outputs/figs/fig4_alt_local_force.png                 120751  f7ec46589b12317e
+02_Code/outputs/figs/fig5_alt_global_summary.png              132700  483568a1aa4068ef
+02_Code/outputs/shap_values_test_logodds.npy                  171824  04f273d4a3ea3ea1
+02_Code/outputs/task2_metrics.json                              1853  235c02d2d4a2e002
+02_Code/outputs/task3_case.json                                 4102  0f5090f199470a44
+02_Code/outputs/task4_global.json                               2334  4cd6d28a1e2fc1c3
+02_Code/outputs/task6_metrics.json                              2114  a0fe8ef58bcc9862
+02_Code/outputs/test_pred_proba.npy                             4216  67573e6dfc4d6653
+02_Code/outputs/xgb_model.joblib                              330905  0500554de8b5d01b
+02_Code/requirements.txt                                         211  37292586eca5bb9f
+02_Code/src/01_task1_eda.py                                     9986  fbaa662e4a8f1389
+02_Code/src/02_task2_model_shap.py                              7819  27fc7f98e8f5ef5b
+02_Code/src/03_task3_local_force.py                             6840  3f0e788e2ae81d68
+02_Code/src/04_task4_global_summary.py                          4822  18c560874d65039f
+02_Code/src/05_task5_slides.py                                  7904  7b6f15a619f7614a
+02_Code/src/06_task6_alt_model.py                              10138  339daa38a970d5a8
+02_Code/src/gen_report.py                                      47289  1c29d4a4e5f31b24
+02_Code/src/prep.py                                             4461  8a8ee0e2ecea9c42
+03_Evidence/Task1_EDA/eda_stats.json                            3490  5aba102aa8bb8610
+03_Evidence/Task1_EDA/fig1_eda_panel.png                      412422  c8cc8868778afa53
+03_Evidence/Task2_Model_SHAP/task2_metrics.json                 1853  235c02d2d4a2e002
+03_Evidence/Task2_Model_SHAP/test_pred_proba.npy                4216  67573e6dfc4d6653
+03_Evidence/Task2_Model_SHAP/xgb_model.joblib                 330905  0500554de8b5d01b
+03_Evidence/Task3_Local_Explanation/fig2_local_force_plot.png    120251  fc12b17d0452b693
+03_Evidence/Task3_Local_Explanation/fig2b_local_waterfall.png    122096  881b3f9d73949303
+03_Evidence/Task3_Local_Explanation/task3_case.json             4102  0f5090f199470a44
+03_Evidence/Task4_Global_Explanation/fig3a_summary_beeswarm.png    146907  75ab87edb491ee36
+03_Evidence/Task4_Global_Explanation/fig3b_mean_abs_bar.png     76508  bcfa4ebef760a93f
+03_Evidence/Task4_Global_Explanation/fig3c_grouped_importance.png     46887  a4c61f10cfb1564c
+03_Evidence/Task4_Global_Explanation/shap_values_test_logodds.npy    171824  04f273d4a3ea3ea1
+03_Evidence/Task4_Global_Explanation/task4_global.json          2334  4cd6d28a1e2fc1c3
+03_Evidence/Task6_Alternative_Model/fig4_alt_local_force.png    120751  f7ec46589b12317e
+03_Evidence/Task6_Alternative_Model/fig5_alt_global_summary.png    132700  483568a1aa4068ef
+03_Evidence/Task6_Alternative_Model/task6_metrics.json          2114  a0fe8ef58bcc9862
+04_Slides/Task5_Audience_Slides.pptx                          143135  8b1990a79999d90e
+05_Reproducibility/data_sha256.txt                               101  8007c6ce368e83cd
+05_Reproducibility/environment.txt                               573  8a918b8b8903c4c0
+05_Reproducibility/requirements.txt                              211  37292586eca5bb9f
+05_Reproducibility/seeds_and_config.json                        4158  d830e458c1a5a3c8
+
+files listed: 54 (this manifest is the 55th file)
+bytes listed: 5438089

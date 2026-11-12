@@ -1,0 +1,124 @@
+{
+  "generated": "2026-11-12",
+  "data": {
+    "file": "healthcare-dataset-stroke-data.csv",
+    "sha256": "644d473b05d2797006bd94865e4f8bb057f0c721617911613c82c8fcfc707420",
+    "rows": 5110,
+    "columns": 12,
+    "duplicate_ids": 0,
+    "stroke_cases": 249,
+    "non_cases": 4861,
+    "prevalence_pct": 4.87,
+    "missing_bmi": {
+      "n": 201,
+      "pct": 3.93
+    },
+    "features_after_encoding": 21
+  },
+  "split": {
+    "seed": 42,
+    "scheme": "stratified 60 / 20 / 20 (train / validation / test)",
+    "sizes": {
+      "train": 3066,
+      "val": 1022,
+      "test": 1022,
+      "train_pos": 149,
+      "val_pos": 50,
+      "test_pos": 50
+    },
+    "note": "train and validation used for tuning and threshold selection; test evaluated once"
+  },
+  "preprocessing": {
+    "fitted_on": "training split only",
+    "numeric_imputation": "training median",
+    "numeric_scaling": "StandardScaler (fitted on training split)",
+    "categorical": "one-hot, handle_unknown='ignore'",
+    "bmi_zero_treated_as_missing": true,
+    "course_pipeline_difference": "the course utils.DataLoader imputes BMI with 0; no patient in the file has BMI 0"
+  },
+  "task2": {
+    "model": "XGBClassifier (gradient-boosted trees)",
+    "params": {
+      "n_estimators": 300,
+      "subsample": 0.9,
+      "colsample_bytree": 0.8,
+      "reg_lambda": 1.0,
+      "scale_pos_weight": 19.58,
+      "random_state": 42,
+      "max_depth": 3,
+      "learning_rate": 0.05,
+      "min_child_weight": 5
+    },
+    "decision_threshold": 0.6,
+    "explainer": {
+      "explainer": "shap.TreeExplainer",
+      "feature_perturbation": "interventional",
+      "background": "100 random training rows (seed 42)",
+      "output_scale": "log-odds of stroke = 1 (model margin)",
+      "positive_class_index": 1,
+      "classes": [
+        0,
+        1
+      ],
+      "explained_set": "all 1022 test rows",
+      "runtime_sec": 1.6,
+      "base_value_log_odds": -3.3692,
+      "base_value_as_probability": 0.0333,
+      "additivity_max_abs_residual_log_odds": 7.240669891217522e-06,
+      "additivity_mean_abs_residual_log_odds": 1.2989402760713775e-06,
+      "additivity_probability_max_abs_residual": 2.842540932634918e-07,
+      "tolerance": 1e-06,
+      "note": "Additivity is checked in the log-odds space where the model is additive by construction; probability is obtained only afterwards through the logistic link 1/(1+exp(-m)), never by adding log-odds contributions to a probability."
+    },
+    "base_value_log_odds": -3.369194
+  },
+  "task3": {
+    "case_index": 668,
+    "case_type": "false negative",
+    "predicted_probability": 0.5834,
+    "threshold": 0.6,
+    "false_negatives_in_test": 18
+  },
+  "task4": {
+    "explained_set": "1022 test rows",
+    "output": "log-odds of stroke = 1",
+    "aggregation": "signed contributions of one-hot columns summed within the parent variable before mean absolute SHAP is taken"
+  },
+  "task6": {
+    "model": "SVC (RBF kernel, probability via internal Platt scaling)",
+    "params": {
+      "C": 0.5,
+      "gamma": "0.02",
+      "kernel": "rbf",
+      "class_weight": "balanced",
+      "random_state": 42
+    },
+    "decision_threshold": 0.16,
+    "explainer": {
+      "explainer": "shap.KernelExplainer",
+      "model_output": "predict_proba (probability of stroke = 1)",
+      "background": "25 training rows (seed 42); task 2 used 100 rows - both drawn from the same training split",
+      "nsamples": "300 (global) / 600 (single case), no L1 regularisation",
+      "link": "identity",
+      "global_set": "150 test rows sampled with seed 42",
+      "runtime_global_sec": 69.2,
+      "runtime_local_sec": 0.9,
+      "base_value_probability": 0.0638,
+      "additivity_max_abs_residual_probability": 0.0,
+      "additivity_mean_abs_residual_probability": 0.0,
+      "tolerance": 0.002
+    },
+    "case": {
+      "index": 668,
+      "svm_probability": 0.0731,
+      "svm_threshold": 0.16,
+      "task2_probability": 0.5834,
+      "task2_threshold": 0.6,
+      "reconstruction": 0.07312
+    }
+  },
+  "environment": {
+    "python": "3.11.1",
+    "pinned": "requirements.txt (analysis subset) and environment.txt (full freeze)"
+  }
+}

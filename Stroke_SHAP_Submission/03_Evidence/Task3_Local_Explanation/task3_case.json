@@ -1,0 +1,152 @@
+{
+  "case_index": 668,
+  "case_type": "false negative",
+  "true_label": 1,
+  "predicted_label": 0,
+  "predicted_probability": 0.5834,
+  "threshold": 0.6,
+  "base_log_odds": -3.3691944808127845,
+  "model_output_log_odds": 0.3368,
+  "n_false_negatives": 18,
+  "omitted_below_threshold_log_odds": -0.0146,
+  "label_grouping_note": "contributions with |phi| < 0.01 log-odds are omitted from the force-plot labels, so the f(x) printed on the plot (0.35) differs from the exact model output (0.337) by their combined -0.015",
+  "contributions": [
+    {
+      "feature": "age",
+      "value": "age = 66 years",
+      "shap_log_odds": 2.995
+    },
+    {
+      "feature": "bmi",
+      "value": "BMI missing (median imputed)",
+      "shap_log_odds": 1.4507
+    },
+    {
+      "feature": "work_type = Self-employed",
+      "value": "work_type = Self-employed (present)",
+      "shap_log_odds": -0.3778
+    },
+    {
+      "feature": "avg_glucose_level",
+      "value": "glucose = 101.5 mg/dL",
+      "shap_log_odds": -0.272
+    },
+    {
+      "feature": "smoking_status = Unknown",
+      "value": "smoking_status = Unknown (present)",
+      "shap_log_odds": -0.202
+    },
+    {
+      "feature": "smoking_status = never smoked",
+      "value": "smoking_status = never smoked (absent)",
+      "shap_log_odds": 0.1155
+    },
+    {
+      "feature": "ever_married = Yes",
+      "value": "ever_married = Yes (present)",
+      "shap_log_odds": -0.0494
+    },
+    {
+      "feature": "gender = Female",
+      "value": "gender = Female (present)",
+      "shap_log_odds": 0.04
+    },
+    {
+      "feature": "ever_married = No",
+      "value": "ever_married = No (absent)",
+      "shap_log_odds": 0.0319
+    },
+    {
+      "feature": "work_type = children",
+      "value": "work_type = children (absent)",
+      "shap_log_odds": 0.0296
+    },
+    {
+      "feature": "Residence_type = Urban",
+      "value": "Residence_type = Urban (present)",
+      "shap_log_odds": 0.0257
+    },
+    {
+      "feature": "Residence_type = Rural",
+      "value": "Residence_type = Rural (absent)",
+      "shap_log_odds": -0.0241
+    },
+    {
+      "feature": "work_type = Private",
+      "value": "work_type = Private (absent)",
+      "shap_log_odds": -0.0165
+    },
+    {
+      "feature": "smoking_status = formerly smoked",
+      "value": "smoking_status = formerly smoked (absent)",
+      "shap_log_odds": -0.0146
+    },
+    {
+      "feature": "hypertension",
+      "value": "hypertension = 0",
+      "shap_log_odds": -0.0115
+    },
+    {
+      "feature": "heart_disease",
+      "value": "heart disease = 0",
+      "shap_log_odds": -0.0096
+    },
+    {
+      "feature": "gender = Male",
+      "value": "gender = Male (absent)",
+      "shap_log_odds": 0.0067
+    },
+    {
+      "feature": "smoking_status = smokes",
+      "value": "smoking_status = smokes (absent)",
+      "shap_log_odds": -0.0067
+    },
+    {
+      "feature": "work_type = Govt_job",
+      "value": "work_type = Govt_job (absent)",
+      "shap_log_odds": -0.005
+    },
+    {
+      "feature": "gender = Other",
+      "value": "gender = Other (absent)",
+      "shap_log_odds": 0.0
+    },
+    {
+      "feature": "work_type = Never_worked",
+      "value": "work_type = Never_worked (absent)",
+      "shap_log_odds": 0.0
+    }
+  ],
+  "table": [
+    {
+      "feature": "age",
+      "patient_value": "age = 66 years",
+      "shap_log_odds": 2.995,
+      "direction": "pushes toward stroke"
+    },
+    {
+      "feature": "bmi",
+      "patient_value": "BMI missing (median imputed)",
+      "shap_log_odds": 1.4507,
+      "direction": "pushes toward stroke"
+    },
+    {
+      "feature": "work_type = Self-employed",
+      "patient_value": "work_type = Self-employed (present)",
+      "shap_log_odds": -0.3778,
+      "direction": "pushes away from stroke"
+    },
+    {
+      "feature": "remaining 18 features (combined)",
+      "patient_value": "-",
+      "shap_log_odds": -0.362,
+      "direction": "pushes away from stroke"
+    },
+    {
+      "feature": "base value (background average)",
+      "patient_value": "-",
+      "shap_log_odds": -3.3692,
+      "direction": "-"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "metrics": {
+    "model": "SVC (RBF kernel, probability via internal Platt scaling)",
+    "params": {
+      "C": 0.5,
+      "gamma": "0.02",
+      "kernel": "rbf",
+      "class_weight": "balanced",
+      "random_state": 42
+    },
+    "threshold": 0.16,
+    "test_n": 1022,
+    "test_pos": 50,
+    "accuracy": 0.8953,
+    "balanced_accuracy": 0.6604,
+    "precision_pos": 0.2062,
+    "recall_pos": 0.4,
+    "f1_pos": 0.2721,
+    "f1_macro": 0.6079,
+    "roc_auc": 0.8039,
+    "average_precision": 0.1685,
+    "prevalence": 0.0489,
+    "confusion": {
+      "tn": 895,
+      "fp": 77,
+      "fn": 30,
+      "tp": 20
+    }
+  },
+  "explainer": {
+    "explainer": "shap.KernelExplainer",
+    "model_output": "predict_proba (probability of stroke = 1)",
+    "background": "25 training rows (seed 42); task 2 used 100 rows - both drawn from the same training split",
+    "nsamples": "300 (global) / 600 (single case), no L1 regularisation",
+    "link": "identity",
+    "global_set": "150 test rows sampled with seed 42",
+    "runtime_global_sec": 69.2,
+    "runtime_local_sec": 0.9,
+    "base_value_probability": 0.0638,
+    "additivity_max_abs_residual_probability": 0.0,
+    "additivity_mean_abs_residual_probability": 0.0,
+    "tolerance": 0.002
+  },
+  "case": {
+    "index": 668,
+    "svm_probability": 0.0731,
+    "svm_threshold": 0.16,
+    "task2_probability": 0.5834,
+    "task2_threshold": 0.6,
+    "reconstruction": 0.07312
+  },
+  "top3_columns": [
+    "age",
+    "avg_glucose_level",
+    "smoking_status = never smoked"
+  ],
+  "grouped_ranking": [
+    {
+      "variable": "age",
+      "mean_abs_shap_probability": 0.05171
+    },
+    {
+      "variable": "avg_glucose_level",
+      "mean_abs_shap_probability": 0.00841
+    },
+    {
+      "variable": "smoking_status",
+      "mean_abs_shap_probability": 0.00798
+    },
+    {
+      "variable": "work_type",
+      "mean_abs_shap_probability": 0.003
+    },
+    {
+      "variable": "gender",
+      "mean_abs_shap_probability": 0.00294
+    },
+    {
+      "variable": "hypertension",
+      "mean_abs_shap_probability": 0.00273
+    }
+  ],
+  "total_runtime_sec": 79.5
+}
